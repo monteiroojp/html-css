@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML</title>
+</head>
+<body>
+    <h1>Videos hospedados localmente</h1>
+    <p>Para colocar videos internos basta usar a tag &lt; video &gt;, selecionando o diretório do vide. Além disso também é possivel colocar outros parâmetros necessários, porém mais detalhes ficarão no anki</p>
+    <video controls width="500" poster="imagens/LionsCia PRETO.png" autoplay loop>
+        <source src="videos/pexelswebm.webm" type="video/webm">
+        <source src="videos/pexelsvmo.mp4" type="video/mp4">
+        <source src="videos/pexelsoriginal.mp4" type="video/mp4">
+    </video>
+    <h1>Videos externos</h1>
+    <p>Também é possivel colocar videos de sites externos, a fim de não consumir armazenamento de tráfego na hospedadora. Para isso, basta usar a tag &lt; iframe &gt;, detalhes a mais ficarão no anki.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9nhD1qTFPuw?si=0cAl3BEM4iRBLrIz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: sans-serif;
+            
+        }
+        a{
+            color: #00ffff;
+        }
+        a:visited{
+            color: #059494;
+        }
+        a:hover{
+            color: brown;
+        }
+        a:active{
+            color: yellow;
+        }
+        .principal:hover{
+            color: aquamarine;
+        }
+        .link::after{
+            content: " ★";
+        }
+        .link::before{
+            content: " ★";
+        }
+        div{
+            width: 200px;
+            height: 200px;
+
+        }
+        div > p{
+            color: antiquewhite;
+        }
+    </style>
+    <title>Pseudoclasses</title>
+</head>
+<body>
+    <h1 class="principal">Pseudoclasses: O que são</h1>
+    <p>Pseudoclasses são estados momentâneos atribuidos a uma tag, classe ou ID. <br> Nessa primeira aula foram aprendidas três: hover, active e visited. Exemplo do seus usos:
+        <ul>
+            <li><a class="link" target="_blank" href="https://lionscia.com.br/">Lionscia</a></li>
+            <li><a class="link" target="_blank" href="https://www.youtube.com/@miuuins5208/videos">Canal Miuuins</a></li>
+        </ul>
+
+        <div>   
+            <p>Texto</p>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(150, 236, 208);
+    font-family: sans-serif;
+}
+h1{
+    color: rgb(65, 150, 121);
+}
+h2{
+    color: rgb(66, 182, 143);
+}
+h1#principal{
+    color:black;
+    background-color: antiquewhite;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+.principal{
+    color: brown;
+}
+.high{
+    color: white;
+}
+.low{
+    color: black;
+}
+.introduction{
+    color: whitesmoke;
+}
