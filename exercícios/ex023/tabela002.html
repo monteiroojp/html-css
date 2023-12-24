@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            height: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            color: white;
+            background-color: black;
+            font-weight: bold;
+        }
+        thead, tfoot{
+            background-color: darkgray;
+        }
+        td, th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+            text-align: center;
+        }
+        td.num{
+            text-align: right;
+        }
+        tbody>tr:nth-child(even){
+            background-color: lightgray;
+        }
+        
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <table>
+        <caption>Tabela da população sudeste</caption>
+        <thead>
+            <tr>
+                <th scope="rol">Estado</th>
+                <th scope="col" style="width: 50px;">População</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.545</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">3.833.712</td>
+            </tr>
+
+        </tbody>
+        <tfoot> 
+            <th scope="row">Total</th>
+            <td class="num"><strong>84.838.213</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
