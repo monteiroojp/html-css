@@ -38,6 +38,11 @@ header>h1{
 header>p{
     padding-bottom: 50px;
 }
+main{
+    max-width: 1200px;
+    min-width: 400px;
+    margin: auto;
+}
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
