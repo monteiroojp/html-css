@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 90vw;
+            height: 500px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+    <title>Iframes de navegação</title>
+</head>
+<body>
+    <h1>Escolha uma das opções</h1>
+    <ul>
+        <li><a href="paginas/pag001.html" target="iframe">Primeira página</a></li>
+        <li><a href="paginas/pag002.html" target="iframe">Segunda página</a></li>
+        <li><a href="paginas/pag003.html" target="iframe">Terceira página</a></li>
+       
+    </ul>
+    <iframe srcdoc="<h1> Clique em uma das páginas </h1>" frameborder="1" name="iframe"></iframe>
+</body>
+</html>
