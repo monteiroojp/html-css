@@ -1,0 +1,25 @@
+@charset "UTF-8"
+
+/*Estilo para impressoras*/
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}   
+menu{
+    display:none
+}
+main{
+    width: 100%;
+}
+
+main::after{
+    content: 'Esse arquivo foi impresso no ano de 2023';
+    vertical-align: bottom;
+}
