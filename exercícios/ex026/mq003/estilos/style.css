@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*Global*/
+
+@media all{
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+        background-repeat: no-repeat;
+    }
+
+
+
+    h1{
+        padding: 10px;
+        color: white;
+        text-shadow: 2px 2px 0px #101b72;
+    }
+}
+
+/*Dispositivo em pé*/
+
+@media screen and (orientation: portrait){
+    body{
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+        background-size: contain;
+    }
+}
+
+/*Dispositivo deitado*/
+
+@media screen and (orientation: landscape){
+    body{
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-size: contain;
+        background-position: left bottom;
+    }
+}
