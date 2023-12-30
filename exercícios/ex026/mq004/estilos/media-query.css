@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*Todas demais mídia*/
+
+/*Tablet*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#pc{display: none;}
+    img#print{display: none;}
+    img#tv{display: none;}
+}    
+
+/*Desktop*/
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: block;}
+    img#print{display: none;}
+    img#tv{display: none;}
+}
+
+/*Tv*/
+
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#pc{display: none;}
+        img#print{display: none;}
+        img#tv{display: block;}
+        
+}
+
+/*Impressão*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 1px solid black;
+        width: 90%;
+    
+    }
+
+    main h1{
+        color: black;
+        box-shadow: none;
+    }
+
+    main::after{
+        content: "Essa versão é destinada a impressão";
+        text-decoration: overline;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#print{display: block;}
+    img#tv{display: none;}
+}
