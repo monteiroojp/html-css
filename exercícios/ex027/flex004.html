@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <link rel="stylesheet" href="estilos/basestyle.css">
+    <style>
+        .container{
+            height: 200px;
+            border: 2px solid white;
+            width: 300px;
+        }
+        .container#f1{
+            align-items: flex-start;
+        }
+        .container#f2{
+            align-items: center;
+        }
+        .container#f3{
+            align-items: flex-end;
+        }
+        .container#f4{
+            align-items: stretch;
+        }
+        .container#f5{
+            align-items: baseline;
+        }
+
+        div.height{
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="f1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="container" id="f2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="container" id="f3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="container" id="f4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="container" id="f5">
+        <div>1</div>
+        <div>2</div>
+        <div class="height">3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
