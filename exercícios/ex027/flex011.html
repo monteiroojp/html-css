@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/basestyle.css">
+    <style>
+    .container {
+        height: 97vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+    .content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .main {
+        flex: 1;
+    }
+
+    .sidebar {
+        order: -1;
+        flex-basis: auto;
+    }
+
+    .ads {
+        flex-basis: auto;
+    }
+
+    @media (min-width: 900px) {
+        .content {
+            flex-direction: row;
+        }
+
+        .main {
+            flex: 2;
+        }
+
+        .sidebar{
+            flex-basis: 100px;
+        }
+        .ads {
+            flex-basis: 100px;
+        }
+    }
+</style>
+    <title>Santo Graal</title>
+</head>
+<body class="container">
+    <header class="header">Header</header>
+    <div class="content container">
+        <main class="main">Content</main>
+        <aside class="sidebar">SIDEBAR</aside>
+        <aside class="ads">ADS</aside>
+    </div>
+    <footer>Footer</footer>
+    
+</body>
+</html>
