@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/basestyle.css">
+    <style>
+        .wrapper{
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, minmax(100px, auto));
+        }
+        .wrapper div:nth-child(1){
+            grid-column: 1 / -1;
+        }
+        .wrapper div:nth-child(3){
+            grid-column: 2 / 5;
+            height: 800px;
+        }
+        .wrapper div:nth-child(5){
+            grid-column: 1 / -1;
+        }
+
+        p{
+            font-size: 1.4em;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero nobis, dolor maxime molestiae reiciendis accusantium perspiciatis, eius nihil non repellat pariatur itaque, dicta consectetur explicabo quo sunt nesciunt at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eaque facilis a, ullam saepe, dolorum accusamus molestias repudiandae neque dolore nobis illum necessitatibus! Molestiae provident voluptates, tempora ipsam eius dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolorem veniam fugiat est fugit totam sit ducimus nemo illo fuga repellendus quia neque facere, provident nesciunt! Iste a placeat aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, autem unde. Totam dolor perspiciatis aut et distinctio pariatur voluptatem sit illo, neque, officia tempora explicabo tenetur cumque voluptatum, non temporibus.</p></div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>
