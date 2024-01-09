@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/basestyle.css">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            grid-template-columns: [site-start] repeat(4, 1fr) [content-end] 1fr [site-end];
+            gap: .5rem;
+            grid-auto-rows: 200px;
+        }
+
+        .wrapper div:nth-child(1){
+            grid-column: site;
+        }
+        .wrapper div:nth-child(2){
+            grid-column: site-start / content-end;
+        }
+        .wrapper div:nth-child(4){
+            grid-column: site;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>header</div>
+        <div>main</div>
+        <div>aside</div>
+        <div>footer</div>
+    </div>
+    
+</body>
+</html>
